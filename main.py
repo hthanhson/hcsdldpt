@@ -18,7 +18,7 @@ def parse_arguments():
                         help='Chế độ hoạt động (search, build_database, demo)')
     
     # Các tham số cho chế độ tìm kiếm
-    parser.add_argument('--image', type=str, default=None,
+    parser.add_argument('--image', type=str, default=r'E:\hcsdldpt\data\10_0_0_20161220222308131.jpg',
                         help='Đường dẫn đến ảnh đầu vào cho chế độ tìm kiếm')
     parser.add_argument('--top_k', type=int, default=3,
                         help='Số lượng kết quả trả về trong chế độ tìm kiếm')

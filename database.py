@@ -31,6 +31,14 @@ class FaceDatabase:
             'filenames': [],
             'attributes': []  # Chứa các thuộc tính: màu da, tuổi, cảm xúc
         }
+    def is_empty(self):
+        """
+         Kiểm tra xem cơ sở dữ liệu có trống hay không
+    
+        Returns:
+        - bool: True nếu cơ sở dữ liệu trống, False nếu có dữ liệu
+        """
+        return self.features is None or len(self.features) == 0
     
     def build_database(self, data_dir, force_rebuild=False):
         """
